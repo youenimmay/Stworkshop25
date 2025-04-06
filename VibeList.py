@@ -69,7 +69,7 @@ st.markdown("---")
 
 # YouTube API setup using secrets
 api_key = st.secrets["youtube_api_key"]
-youtube = build("youtube", "v3", developerKey=youtube_api_key)
+youtube = build("youtube", "v3", developerKey=api_key)
 
 # Function to fetch YouTube videos based on search query
 def get_youtube_videos(query, max_results=5):
