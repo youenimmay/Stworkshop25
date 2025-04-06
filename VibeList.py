@@ -15,6 +15,7 @@ st.markdown("""
         position: -webkit-sticky;
         position: sticky;
         top: 20px;
+        align-self: flex-start;
     }
     .button-row {
         display: flex;
@@ -39,7 +40,8 @@ genre_emojis = {
 # Header
 st.markdown(
     "<h1 style='text-align: center; font-size: 3em;'>🎶 VibeList</h1>"
-    "<h3 style='text-align: center; font-weight: normal;'>Custom YouTube playlists for your current vibe</h3>",
+    "<h3 style='text-align: center; font-weight: normal;'>Custom YouTube playlists for your current vibe</h3>"
+    "<p style='text-align: center; font-size: 1.1em;'>👆 Set your mood, pick some genres, and click Generate!</p>",
     unsafe_allow_html=True
 )
 
@@ -122,5 +124,3 @@ with col2:
     if clear_button:
         st.empty()  # Clear the videos and the mood/genre/task selections
         st.markdown("## 🧹 Playlist Cleared!")
-    else:
-        st.info("👆 Set your mood, pick some genres, and click Generate!")
