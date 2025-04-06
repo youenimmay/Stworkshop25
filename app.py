@@ -18,7 +18,7 @@ def analyze_text(text):
         return
     
     client = OpenAI(api_key=api_key)
-    model = "gpt-3.5-turbo"  # Using the GPT-3.5 model
+    model = "gpt-4o"  # Using the GPT-3.5 model
 
     # Instructions for the AI (adjust if needed)
     messages = [
